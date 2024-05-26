@@ -1,0 +1,30 @@
+---
+title: "Set Up"
+output:
+  html_document:
+    df_print: paged
+  learnr::tutorial:
+    progressive: true
+    allow_skip: true
+runtime: shiny_prerendered
+description: |
+  This is the first in a series of five MTU Trading Room Quizzes.
+---
+
+```{r setup, include=FALSE}
+library(learnr)
+tutorial_options(exercise.timelimit = 60)
+```
+
+## Quiz #1 - Reading a Stock Quote
+
+```{r quiz1, echo = FALSE}
+question("What does EPS stand for?",
+  answer("Earnings per Share", correct = TRUE),
+  answer("Earnings per Stock", message = "* Incorrect. EPS stands for Earnings per Share."),
+  answer("Earnings price Share", message = "* Incorrect. EPS stands for Earnings per Share."),
+  answer("Equity per Share", message = "Incorrect. EPS stands for Earnings per Share.")
+)
+
+```
+
