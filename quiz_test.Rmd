@@ -1,0 +1,27 @@
+---
+title: "Hello, Tutorial!"
+output: learnr::tutorial
+runtime: shiny_prerendered
+---
+
+```{r setup, include=FALSE}
+library(learnr)
+```
+
+This code computes the answer to one plus one, change it so it computes two plus two:
+
+```{r addition, exercise=TRUE}
+1 + 1
+```
+
+
+```{r quiz1, echo = FALSE}
+question("Check all that you have NOT done:",
+  answer("installed R on my computer", message = "* Install R"),
+  answer("installed the RStudio IDE", message = "* Install RStudio IDE"),
+  answer("installed the tidyverse R package", message = "* Install Packages"),
+  answer("None of the above. I've done them all.", correct = TRUE, message = "You can skip this tutorial!"),
+  type = "multiple",
+  incorrect = "This tutorial is here to help! To get set up read:"
+)
+```
